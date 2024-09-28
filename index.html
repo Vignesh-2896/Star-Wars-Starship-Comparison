@@ -1,71 +1,76 @@
 <html>
-<head>
-	<title> Star Wars - Starship Comparison </title>
-	<style>
-	table,td,th
-	{
-		border:1px solid black;
-	}
-	th
-	{
-		font-size:30px;
-	}
-	td
-	{
-		font-size:28px;
-		width:230px;
-	}
-	select
-	{
-		height:30px;
-		width:300px;
-		font-size:23px;
-	}
-	</style>
-</head>
-<body>
-	<h1 style="text-align:center"> Star Wars - Starship Comparison </h1>
-	<h2> Select two Starships from the dropdown lists to compare : </h2><br>
-	<select id="compare1">
-	<option value="">Select a Starship</option>
-	</select>
-	<select id="compare2">
-	<option value="">Select a Starship</option>	
-	</select>	
-	<button style="height:30px;width:120px;font-size:22px" id="compare_ship">Compare</button><br><br>
-	<table>
-	<tr>
-		<th></th>
-		<th> Starship 1 </th>
-		<th> Starship 2 </th>
-	</tr>
-	<tr>
-		<td>Name</td>
-		<td id="ship1_name"></td>
-		<td id="ship2_name"></td>	
-	</tr>
-	<tr>
-		<td>Cost</td>
-		<td id="ship1_cost"></td>
-		<td id="ship2_cost"></td>	
-	</tr>
-	<tr>
-		<td>Speed</td>
-		<td id="ship1_speed"></td>
-		<td id="ship2_speed"></td>	
-	</tr>
-	<tr>
-		<td>Cargo Size</td>
-		<td id="ship1_cargo"></td>
-		<td id="ship2_cargo"></td>	
-	</tr>	
-	<tr>
-		<td>Passengers</td>
-		<td id="ship1_pssg"></td>
-		<td id="ship2_pssg"></td>	
-	</tr>	
-	</table>
-</body>
-<script src="index.js"></script>
-<script src="ship_generator.js"></script>
+  <head>
+    <title>Star Wars - Starship Comparison</title>
+    <style>
+      table,
+      td,
+      th {
+        border: 1px solid black;
+      }
+      th {
+        font-size: 30px;
+      }
+      td {
+        font-size: 28px;
+        width: 230px;
+      }
+      select {
+        height: 30px;
+        width: 300px;
+        font-size: 23px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center">Star Wars - Starship Comparison</h1>
+    <h2>Select two Starships from the dropdown lists to compare :</h2>
+    <br />
+    <select id="compare1">
+      <option value="">Select a Starship</option>
+    </select>
+    <select id="compare2">
+      <option value="">Select a Starship</option>
+    </select>
+    <button
+      style="height: 30px; width: 120px; font-size: 22px; padding-bottom:5px"
+      id="compare_ship"
+    >
+      Compare
+    </button>
+    <br /><br />
+    <table>
+      <tr>
+        <th></th>
+        <th>Starship 1</th>
+        <th>Starship 2</th>
+      </tr>
+      <tr>
+        <td>Name</td>
+        <td id="ship1_name"></td>
+        <td id="ship2_name"></td>
+      </tr>
+      <tr>
+        <td>Cost</td>
+        <td id="ship1_cost"></td>
+        <td id="ship2_cost"></td>
+      </tr>
+      <tr>
+        <td>Speed</td>
+        <td id="ship1_speed"></td>
+        <td id="ship2_speed"></td>
+      </tr>
+      <tr>
+        <td>Cargo Size</td>
+        <td id="ship1_cargo"></td>
+        <td id="ship2_cargo"></td>
+      </tr>
+      <tr>
+        <td>Passengers</td>
+        <td id="ship1_pssg"></td>
+        <td id="ship2_pssg"></td>
+      </tr>
+    </table>
+  </body>
+  <script src="index.js"></script>
+  <script src="ship_generator.js"></script>
 </html>
